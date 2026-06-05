@@ -2,13 +2,13 @@ name: CI Annotated Example
 
 on:
   push:
-    branches: [master]   # agar tum master branch use kar rahe ho
+    branches: [main]   # agar tum master branch use kar rahe ho
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   validate:
-    
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
